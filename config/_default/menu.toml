@@ -11,7 +11,7 @@
 identifier = "instagram"
 name = "Instagram"
 url = "https://www.instagram.com/datawilltell/"
-icon = "../../assets/icons/brand-instagram.svg"
+link = "../../assets/icons/brand-instagram.svg"
 
 #[social.params]
 #icon = "brand-instagram"
