@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Example Tag on Yuki (Yingxue) Ao | BI DataViz Enthusiast</title><link>https://aoyingxue.github.io/yuki-personal-blog/tags/example-tag/</link><description>Recent content in Example Tag on Yuki (Yingxue) Ao | BI DataViz Enthusiast</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://aoyingxue.github.io/yuki-personal-blog/tags/example-tag/index.xml" rel="self" type="application/rss+xml"/><item><title>Global Coffee Tour</title><link>https://aoyingxue.github.io/yuki-personal-blog/p/global-coffee-tour-02/</link><pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate><guid>https://aoyingxue.github.io/yuki-personal-blog/p/global-coffee-tour-02/</guid><description>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/images/cover.jpg" alt="Featured image of post Global Coffee Tour" />&lt;h2 id="brainstorming-ideas">
+&lt;a href="#brainstorming-ideas">#&lt;/a>
+Brainstorming ideas
+&lt;/h2>&lt;p>In March, 2024, I made it one of my new year resolutions to make at least 10 complete personal projects. I was a data operations specialist, or technically a business analyst. The daily work and ad hoc work involved a lot of data cleaning, since the company I was in was on the progress of building a ERP system but it&amp;rsquo;s still in the earliest stages. While I was wondering in a coffee shop about what other interesting topics I can dive in outside work, having the accessible data and playing around the data without social consequences, I said to myself, why not coffee since I&amp;rsquo;m a coffee lover?&lt;/p>
+&lt;p>Since then I browsed through websites and books, searched for data about coffee, ranging from coffee bean production, coffee types, coffee shops, and I came across a book named &amp;ldquo;&lt;em>Lonely Planet&amp;rsquo;s Global Coffee Tour&lt;/em>&amp;rdquo;. It&amp;rsquo;s published in 2018, rated high on Amazon, and available in the local library. I borrowed it, read it, and collected information and self-made a table including unique coffee styles in 36 countries across 7 continents, provided services and ratings of 164 coffee shops around the world. (&lt;a class="link" href="https://docs.google.com/spreadsheets/d/1L81u0-yGyPNaKl_bZnY8OKhvM4T0b7e2Z52gGJGsGx4/edit?usp=sharing" target="_blank" rel="noopener"
+>Google sheet link is here&lt;/a>.)&lt;/p>
+&lt;p>Using this data as the main source, I was hoping to set up a simple coffee info &amp;amp; recommendation system.&lt;/p>
+&lt;h2 id="challenges">
+&lt;a href="#challenges">#&lt;/a>
+Challenges
+&lt;/h2>&lt;h3 id="tableau-map-limitations-when-drawing-a-single-continent">
+&lt;a href="#tableau-map-limitations-when-drawing-a-single-continent">#&lt;/a>
+Tableau map limitations when drawing a single continent
+&lt;/h3>&lt;p>What I had in mind is to show one continent at each dashboard, but Tableau doesn&amp;rsquo;t have continent attribute when it comes to draw maps. Good thing is ArcGIS provides shape files for each continent.&lt;/p>
+&lt;p>Next thing is to standardize the aliases. For example, in ArcGIS data, North America and South America, as the book mentioned, are both recorded as Americas. Before I put the data in Tableau, firstly I had to align them, so that the same thing has the same name in different data sources.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240331231149117.png"
+loading="lazy"
+alt="Coffee shop map of Americas"
+>&lt;/p>
+&lt;h3 id="paginate-the-table-in-tableau">
+&lt;a href="#paginate-the-table-in-tableau">#&lt;/a>
+Paginate the table in Tableau
+&lt;/h3>&lt;p>As I mentioned above, I collected the information of as many as 164 coffee shops from the book, which cannot be shown in a table at the same time without scrolling your mouse. So what I had in mind is a next/previous button to replace the page scroller.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Create 2 parameters: Page Size and Current Page as below. You could choose a fixed value for page size, or you could make it a parameter to easily change it to the size until it&amp;rsquo;s fit for the design.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240331231818577.png"
+loading="lazy"
+alt="Current Page"
+>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401091531503.png"
+loading="lazy"
+alt="Page Size"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Using the parameters above to create calculations that get the real page number for each row based on page size you set up.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401092527458.png"
+loading="lazy"
+alt="image-20240401092527458"
+>&lt;/p>
+&lt;p>If you put it in rows as a discrete variable, you would see every 10 (aka page size) rows are assigned to the same value of page number, which can be used as a filter.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401092639728.png"
+loading="lazy"
+alt="image-20240401092639728"
+>&lt;/p>
+&lt;p>So to achieve this, create another calculation as a filter, simply by calculating whether the parameter Current Page is equal to the table calculation Page Number and returning a boolean.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401092920048.png"
+loading="lazy"
+alt="image-20240401092920048"
+>&lt;/p>
+&lt;p>If you now drag the Page Filter to Filters and select only True, you could see it&amp;rsquo;s exactly showing the number of rows as the Page Size.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401093201531.png"
+loading="lazy"
+alt="Page Filter True"
+>&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401093236853.png"
+loading="lazy"
+alt="image-20240401093236853"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Build the buttons&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Firstly, you have to know which page number is the last page so that you won&amp;rsquo;t end up staring at a blank page.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401093412741.png"
+loading="lazy"
+alt="Last Page"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Next, the pagination label using a number placeholder.&lt;/p>
+&lt;p>What I want to achieve is a series of buttons that can do &amp;ldquo;return to the first page&amp;rdquo;, &amp;ldquo;to the previous page&amp;rdquo;, an indicator showing the current page number, &amp;ldquo;to the next page&amp;rdquo; and &amp;ldquo;to the last page&amp;rdquo;.&lt;/p>
+&lt;p>The first thing is to find a number placeholder that won&amp;rsquo;t be changed over time or filters. I made up a simple excel sheet and connect it with coffee store data.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401143156689.png"
+loading="lazy"
+alt="image-20240401143156689"
+>&lt;/p>
+&lt;p>Using it we can create a calculation to give those 5 buttons a shape/number label. Sort the field ascending by Number (1,2,3,4,5).&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401143057909.png"
+loading="lazy"
+alt="page label"
+>&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401144117550.png"
+loading="lazy"
+alt="image-20240401144117550"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The buttons are correctly shown but each button should be assigned to a real value which can be used to change the current page number parameter.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401150638763.png"
+loading="lazy"
+alt="Page Value"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Set up an action to change parameter.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401150602264.png"
+loading="lazy"
+alt="Parameter Action"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create a calculation based on which we format the colors.&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401155422224.png"
+loading="lazy"
+alt="button color"
+>&lt;/p>
+&lt;p>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/yuki-personal-blog/images/image-20240401155512823.png"
+loading="lazy"
+alt="image-20240401155512823"
+>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol></description></item><item><title>Hello World</title><link>https://aoyingxue.github.io/yuki-personal-blog/p/hello-world/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://aoyingxue.github.io/yuki-personal-blog/p/hello-world/</guid><description>&lt;img src="https://aoyingxue.github.io/yuki-personal-blog/p/hello-world/cover.jpg" alt="Featured image of post Hello World" />&lt;p>Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p>
+&lt;p>For more information about this theme, check the documentation: &lt;a class="link" href="https://stack.jimmycai.com/" target="_blank" rel="noopener"
+>https://stack.jimmycai.com/&lt;/a>&lt;/p>
+&lt;p>Want a site like this? Check out &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+>hugo-theme-stack-stater&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
