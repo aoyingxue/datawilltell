@@ -7,9 +7,13 @@ image: ./images/cover.jpg
 categories:
     - Personal Projects
 tags:
-    - Example Tag
+    - Tableau, Data Visualization, LOD
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
+
+## Dashboard
+
+
 
 ## Brainstorming ideas
 
@@ -31,7 +35,9 @@ Next thing is to standardize the aliases. For example, in ArcGIS data, North Ame
 
 ### Paginate the table in Tableau
 
-As I mentioned above, I collected the information of as many as 164 coffee shops from the book, which cannot be shown in a table at the same time without scrolling your mouse. So what I had in mind is a next/previous button to replace the page scroller. 
+I collected the information of as many as 164 coffee shops from the book, which cannot be shown in a table at the same time without scrolling your mouse. So what I had in mind is a next/previous button to replace the page scroller, something like this:
+
+![image-20240404173749465](./images/image-20240404173749465.png)
 
 1. Create 2 parameters: Page Size and Current Page as below. You could choose a fixed value for page size, or you could make it a parameter to easily change it to the size until it's fit for the design. 
 
@@ -88,5 +94,9 @@ As I mentioned above, I collected the information of as many as 164 coffee shops
       ![button color](./images/image-20240401155422224.png)
 
       ![image-20240401155512823](./images/image-20240401155512823.png)
-      
-      
+
+Everything is perfect, just as I imagined. 
+
+![image-20240404173921287](./images/image-20240404173921287.png)
+
+However, when I wanna interact with the map and let map control stores in which country show in the table, there's a problem. Because I had to use a LOD when calculating the last page number of the table, it won't work when any table filters applied. 
