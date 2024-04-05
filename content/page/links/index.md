@@ -2,13 +2,25 @@
 title: Links
 links:
   - title: Linktree
-    description: Link in Bio.
+    description: All my links in bio.
     website: https://linktr.ee/datawilltell
-    image: github-logo.png
+    image: linktree-logo.png
+  - title: LinkedIn
+    description: Profession path lies in here.
+    website: https://www.instagram.com/datawilltell
+    image: linkedin-logo.png
+  - title: Instagram
+    description: Picture storage for my personal projects.
+    website: https://www.instagram.com/datawilltell
+    image: instagram-logo.png
+  - title: Threads
+    description: Microblog and my idea threads.
+    website: https://www.threads.net/@datawilltell/post/C4lDKhXrtk
+    image: instagram-logo.png
   - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+    description: Where my website lives.
+    website: https://github.com/aoyingxue
+    image: github-logo.png
 menu:
     main: 
         weight: 4
@@ -17,4 +29,3 @@ menu:
 
 comments: false
 ---
-
