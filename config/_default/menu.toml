@@ -13,7 +13,7 @@ name = "Linktree"
 url = "https://linktr.ee/datawilltell"
 
 [social.params]
-icon = "link"
+icon = "brand-linktree"
 
 [[social]]
 identifier = "github"
