@@ -13,6 +13,8 @@ weight: 1       # You can add weight to some posts to override the default sorti
 ---
 ## Dashboard
 
+It's better to interact with it at Tableau Public ([Link]()). I'd be much appreciate it if you like it and add it as your favorite.
+
 ## Brainstorming ideas
 
 In March, 2024, I made it one of my new year resolutions to make at least 10 complete personal projects. I was a data operations specialist, or technically a business analyst. The daily work and ad hoc work involved a lot of data cleaning, since the company I was in was on the progress of building a ERP system but it's still in the earliest stages. While I was wondering in a coffee shop about what other interesting topics I can dive in outside work, having the accessible data and playing around the data without social consequences, I said to myself, why not coffee since I'm a coffee lover?
