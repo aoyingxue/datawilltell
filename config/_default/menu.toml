@@ -29,7 +29,7 @@ name = "LinkedIn"
 url = "https://www.linkedin.com/in/aoyingxue/"
 
 [social.params]
-icon = "brand-linked"
+icon = "brand-linkedin"
 
 [[social]]
 identifier = "tableau"
@@ -37,4 +37,4 @@ name = "Tableau Public"
 url = "https://public.tableau.com/app/profile/yukiao/vizzes"
 
 [social.params]
-icon = "tableau-software"
+icon = "brand-tableau-software"
