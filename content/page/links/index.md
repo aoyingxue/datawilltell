@@ -16,7 +16,7 @@ links:
   - title: Threads
     description: Microblog and my idea threads.
     website: https://www.threads.net/@datawilltell/post/C4lDKhXrtk
-    image: instagram-logo.png
+    image: threads-logo.png
   - title: GitHub
     description: Where my website lives.
     website: https://github.com/aoyingxue
