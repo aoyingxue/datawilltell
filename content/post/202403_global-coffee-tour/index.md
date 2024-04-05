@@ -1,7 +1,7 @@
 ---
 title: Global Coffee Tour
-description: Personal project #2
-slug: global-coffee-tour-02
+description: The global coffee tour includes a multi-continental overview from the production of coffee beans to the infamous local coffee shops.
+slug: global-coffee-tour
 date: 2024-04-04
 image: cover.png
 categories:
