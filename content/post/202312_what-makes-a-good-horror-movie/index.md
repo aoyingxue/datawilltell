@@ -30,7 +30,7 @@ It's better to interact with it at Tableau Public ([Link](https://public.tableau
 
 🌎 Places that released the most don’t have the best.
 
-![What Makes A Good Horror Movie](./dashboard.png)
+![What Makes A Good Horror Movie](dashboard.png)
 
 ## Project background
 
