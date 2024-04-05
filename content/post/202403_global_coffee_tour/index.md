@@ -7,13 +7,11 @@ image: cover.jpg
 categories:
     - Personal Projects
 tags:
-    - Tableau, Data Visualization, LOD
+    - Tableau
+    - Data Visualization
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
-
 ## Dashboard
-
-
 
 ## Brainstorming ideas
 
@@ -27,7 +25,7 @@ Using this data as the main source, I was hoping to set up a simple coffee info 
 
 ### Tableau map limitations when drawing a single continent
 
-What I had in mind is to show one continent at each dashboard, but Tableau doesn't have continent attribute when it comes to draw maps. Good thing is ArcGIS provides shape files for each continent. 
+What I had in mind is to show one continent at each dashboard, but Tableau doesn't have continent attribute when it comes to draw maps. Good thing is ArcGIS provides shape files for each continent.
 
 Next thing is to standardize the aliases. For example, in ArcGIS data, North America and South America, as the book mentioned, are both recorded as Americas. Before I put the data in Tableau, firstly I had to align them, so that the same thing has the same name in different data sources.
 
@@ -39,15 +37,14 @@ I collected the information of as many as 164 coffee shops from the book, which 
 
 ![image-20240404173749465](image-20240404173749465.png)
 
-1. Create 2 parameters: Page Size and Current Page as below. You could choose a fixed value for page size, or you could make it a parameter to easily change it to the size until it's fit for the design. 
+1. Create 2 parameters: Page Size and Current Page as below. You could choose a fixed value for page size, or you could make it a parameter to easily change it to the size until it's fit for the design.
 
    ![Current Page](image-20240331231818577.png)![Page Size](image-20240401091531503.png)
-
-2. Using the parameters above to create calculations that get the real page number for each row based on page size you set up. 
+2. Using the parameters above to create calculations that get the real page number for each row based on page size you set up.
 
    ![image-20240401092527458](image-20240401092527458.png)
 
-   If you put it in rows as a discrete variable, you would see every 10 (aka page size) rows are assigned to the same value of page number, which can be used as a filter. 
+   If you put it in rows as a discrete variable, you would see every 10 (aka page size) rows are assigned to the same value of page number, which can be used as a filter.
 
    ![image-20240401092639728](image-20240401092639728.png)
 
@@ -60,43 +57,38 @@ I collected the information of as many as 164 coffee shops from the book, which 
    ![Page Filter True](image-20240401093201531.png)
 
    ![image-20240401093236853](image-20240401093236853.png)
-
 3. Build the buttons
 
-   1. Firstly, you have to know which page number is the last page so that you won't end up staring at a blank page. 
+   1. Firstly, you have to know which page number is the last page so that you won't end up staring at a blank page.
 
       ![Last Page](image-20240401093412741.png)
+   2. Next, the pagination label using a number placeholder.
 
-   2. Next, the pagination label using a number placeholder. 
+      What I want to achieve is a series of buttons that can do "return to the first page", "to the previous page", an indicator showing the current page number, "to the next page" and "to the last page".
 
-      What I want to achieve is a series of buttons that can do "return to the first page", "to the previous page", an indicator showing the current page number, "to the next page" and "to the last page". 
-
-      The first thing is to find a number placeholder that won't be changed over time or filters. I made up a simple excel sheet and connect it with coffee store data. 
+      The first thing is to find a number placeholder that won't be changed over time or filters. I made up a simple excel sheet and connect it with coffee store data.
 
       ![image-20240401143156689](image-20240401143156689.png)
 
-      Using it we can create a calculation to give those 5 buttons a shape/number label. Sort the field ascending by Number (1,2,3,4,5). 
+      Using it we can create a calculation to give those 5 buttons a shape/number label. Sort the field ascending by Number (1,2,3,4,5).
 
       ![page label](image-20240401143057909.png)
 
       ![image-20240401144117550](image-20240401144117550.png)
-
-   3. The buttons are correctly shown but each button should be assigned to a real value which can be used to change the current page number parameter. 
+   3. The buttons are correctly shown but each button should be assigned to a real value which can be used to change the current page number parameter.
 
       ![Page Value](image-20240401150638763.png)
-
    4. Set up an action to change parameter.
 
       ![Parameter Action](image-20240401150602264.png)
-
    5. Create a calculation based on which we format the colors.
 
       ![button color](image-20240401155422224.png)
 
       ![image-20240401155512823](image-20240401155512823.png)
 
-Everything is perfect, just as I imagined. 
+Everything is perfect, just as I imagined.
 
 ![image-20240404173921287](image-20240404173921287.png)
 
-However, when I wanna interact with the map and let map control stores in which country show in the table, there's a problem. Because I had to use a LOD when calculating the last page number of the table, it won't work when any table filters applied. 
+However, when I wanna interact with the map and let map control stores in which country show in the table, there's a problem. Because I had to use a LOD when calculating the last page number of the table, it won't work when any table filters applied.
