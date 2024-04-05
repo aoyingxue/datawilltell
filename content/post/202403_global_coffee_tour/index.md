@@ -3,7 +3,7 @@ title: Global Coffee Tour
 description: Personal project #2
 slug: global-coffee-tour-02
 date: 2024-04-04
-image: cover.jpg
+image: cover.png
 categories:
     - Personal Projects
 tags:
