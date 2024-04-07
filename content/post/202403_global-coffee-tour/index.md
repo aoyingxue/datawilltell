@@ -30,7 +30,7 @@ Data sources include recommendations in a high-rated travel book named *"Lonely 
 
 Next 5 pages are showing countries in each continent and their signature coffee culture and stores. Click the country on the map or choose one in the filter, you could get a sense of its signature coffee style, coffee pairings, coffee language and do & don'ts. Find the best store with the highest ratings in the country you wanna tour in. 
 
-###Americas
+### Americas 
 
 ![Americas](Americas.png)
 
