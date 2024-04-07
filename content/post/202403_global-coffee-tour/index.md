@@ -9,11 +9,75 @@ categories:
 tags:
     - Tableau
     - Data Visualization
+    - Data Collection
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 ## Dashboard
 
-It's better to interact with it at Tableau Public ([Link]()). I'd be much appreciate it if you like it and add it as your favorite.
+It's better to interact with it at **Tableau Public ([Link](https://public.tableau.com/app/profile/yukiao/viz/GlobalCoffeeTour/Overview))**. I'd be much appreciate it if you like it, add it as your favorite or nominate for Viz of the Day!
+
+### Overview
+
+![Overview](Overview.png)
+
+In Overview, production of coffee bean among 5 main continents is shown, with the time series analysis from 1961 to 2021. Among the continents, 
+
+- **Europe** has the most recommended coffee stores in the 2018 book *"Lonely Planet Lonely Planet's Global Coffee Tour"*, up to 65 cafés.
+- **Asia** had the highest growth rate of coffee bean production comparing 2021 to 1961, going up by 1573%.
+- **North and South America** has produced the most coffee beans in 2021, producing 5,163,153 tons.
+
+Data sources include recommendations in a high-rated travel book named *"Lonely Planet's Global Coffee Tour"* ([data collection in Google sheet clicks here](https://docs.google.com/spreadsheets/d/1L81u0-yGyPNaKl_bZnY8OKhvM4T0b7e2Z52gGJGsGx4/edit?usp=sharing)), and data of *"Crops and livestock products"* by FAOSTAT *(Food and Agriculture Organization of the United Nation)*. 
+
+Next 5 pages are showing countries in each continent and their signature coffee culture and stores. Click the country on the map or choose one in the filter, you could get a sense of its signature coffee style, coffee pairings, coffee language and do & don'ts. Find the best store with the highest ratings in the country you wanna tour in. 
+
+###Americas
+
+![Americas](Americas.png)
+
+In North and South America, 
+
+- **Brazil** has the most coffee bean production in 2021 among the countries.
+- **Honduras** is the country with the highest growth rate of coffee bean production comparing 2021 to 1961, going up by 1768%.
+- United States of America has the most recommended stores (22) in the book.
+
+### Africa
+
+![Africa](Africa.png)
+
+In Africa, 
+
+- **Ethiopia** has the most coffee bean production in 2021 among the countries. 
+- **Malawi** is the country with the highest growth rate of coffee bean production comparing 2021 to 1961, going up by 5888%.
+- **South Africa** has the most recommended stores (5) in the book.
+
+### Asia
+
+![Asia](Asia.png)
+
+In Asia, 
+
+- **Vietnam** has the most coffee bean production in 2021 among the countries. 
+- **Thailand** is the country with the highest growth rate of coffee bean production comparing 2021 to 1961, going up by 49900%.
+- **Japan** has the most recommended stores (6) in the book.
+
+### Oceania
+
+![Oceania](Oceania.png)
+
+In Oceania, 
+
+- **Papua New Guinea** has the most coffee bean production in 2021 among the countries.
+- Papua New Guinea is also the country with the highest growth rate of coffee bean production comparing 2021 to 1961, going up by 1586%.
+- **Australia** has the most recommended stores (25) in the book.
+
+### Europe
+
+![Europe](Europe.png)
+
+In Europe, 
+
+- there's 0 coffee bean production in any country.
+- **U.K. of Great Britain and Northern Ireland** has the most recommended stores (16) in the book.
 
 ## Brainstorming ideas
 
@@ -106,4 +170,12 @@ However, when I wanna interact with the map and let map control stores in which 
 
       ![Tableau](image-20240406195505491.png)
 
-2. Arrow
+2. Map annotations
+
+   I planned to put a filter and some annotations around the blank space of the map to also fill up the space. So I screenshot every dashboard of the continental analysis and imported them in Figma. I drew arrows in it and export them as PNGs. 
+
+   ![dashboards and arrows on Figma](image-20240407230139952.png)
+
+   After importing them in Tableau, I put them at the exact spot I imagined in Figma and ta-da! It's finished! 
+
+   
