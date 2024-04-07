@@ -23,7 +23,7 @@ Since then I browsed through websites and books, searched for data about coffee,
 
 Using this data as the main source, I was hoping to set up a simple coffee info & recommendation system.
 
-## Challenges
+## The way I did it and challenges along the way
 
 ### Tableau map limitations when drawing a single continent
 
@@ -41,24 +41,23 @@ I collected the information of as many as 164 coffee shops from the book, which 
 
 1. Create 2 parameters: Page Size and Current Page as below. You could choose a fixed value for page size, or you could make it a parameter to easily change it to the size until it's fit for the design.
 
-   ![Current Page](image-20240331231818577.png)![Page Size](image-20240401091531503.png)
+   ![Current Page](image-20240331231818577.png)![](image-20240401091531503.png)
 2. Using the parameters above to create calculations that get the real page number for each row based on page size you set up.
 
-   ![image-20240401092527458](image-20240401092527458.png)
+   ![](image-20240401092527458.png)
 
    If you put it in rows as a discrete variable, you would see every 10 (aka page size) rows are assigned to the same value of page number, which can be used as a filter.
 
-   ![image-20240401092639728](image-20240401092639728.png)
+   ![](image-20240401092639728.png)
 
    So to achieve this, create another calculation as a filter, simply by calculating whether the parameter Current Page is equal to the table calculation Page Number and returning a boolean.
 
-   ![image-20240401092920048](image-20240401092920048.png)
+   ![](image-20240401092920048.png)
 
    If you now drag the Page Filter to Filters and select only True, you could see it's exactly showing the number of rows as the Page Size.
 
-   ![Page Filter True](image-20240401093201531.png)
+   ![Page Filter True](image-20240401093201531.png)![](image-20240401093236853.png)
 
-   ![image-20240401093236853](image-20240401093236853.png)
 3. Build the buttons
 
    1. Firstly, you have to know which page number is the last page so that you won't end up staring at a blank page.
@@ -70,27 +69,41 @@ I collected the information of as many as 164 coffee shops from the book, which 
 
       The first thing is to find a number placeholder that won't be changed over time or filters. I made up a simple excel sheet and connect it with coffee store data.
 
-      ![image-20240401143156689](image-20240401143156689.png)
+      ![](image-20240401143156689.png)
 
       Using it we can create a calculation to give those 5 buttons a shape/number label. Sort the field ascending by Number (1,2,3,4,5).
 
-      ![page label](image-20240401143057909.png)
+      ![](image-20240401143057909.png)![](image-20240401144117550.png)
 
-      ![image-20240401144117550](image-20240401144117550.png)
    3. The buttons are correctly shown but each button should be assigned to a real value which can be used to change the current page number parameter.
-
+   
       ![Page Value](image-20240401150638763.png)
    4. Set up an action to change parameter.
-
+   
       ![Parameter Action](image-20240401150602264.png)
    5. Create a calculation based on which we format the colors.
-
-      ![button color](image-20240401155422224.png)
-
-      ![image-20240401155512823](image-20240401155512823.png)
+   
+      ![Button Color](image-20240401155422224.png)![](image-20240401155512823.png)
+   
 
 Everything is perfect, just as I imagined.
 
-![image-20240404173921287](image-20240404173921287.png)
+![](image-20240404173921287.png)
 
-However, when I wanna interact with the map and let map control stores in which country show in the table, there's a problem. Because I had to use a LOD when calculating the last page number of the table, it won't work when any table filters applied.
+However, when I wanna interact with the map and let map control stores in which country show in the table, there's a problem. Because I had to use a LOD when calculating the last page number of the table, it won't work when any table filters applied. So I made a little workaround to filter country when clicking the country on the map. I added a parameter \[country\] in the calculations when calculating the page filter and last page number as below. I'll do the similar tricks with other continents later. 
+
+![](image-20240405211431452.png)
+
+### Layout design 
+
+1. Text containers:
+
+   1. I'd like 4 containers to showcase each country's coffee styles, coffee pairings, coffee languages, and preferences in words. What I had in mind is frames with rounded edges but containers in Tableau cannot do that. So I turned to Figma to draw it and export it as a png image.
+
+      ![Figma](image-20240406195303672.png)
+
+   2. After adding it as a floating background image on Tableau, I put the text containers and text dashboards in it and then put a blank container floating above all so that users won't accidentally click on these. 
+
+      ![Tableau](image-20240406195505491.png)
+
+2. Arrow
