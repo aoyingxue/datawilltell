@@ -62,11 +62,11 @@ Budget consumption is above all other key indicators. As long as the actuals are
 
 ### Time related variables 
 
-I set up a point grading system to measure the time as below. 
+I set up a point grading system to measure time punctuality as below, and tolerance for each KPI.
 
 - Start date on time = (Actual start date <= Schedule start date), 
-- Finish date on time = (Actual finish date <= Schedule finish date) 
-- Duration within schedule = (Actual duration <= Schedule duration)
+- Finish date on time = (Actual finish date - Schedule finish date <= Tolerance) 
+- Duration within schedule = (Actual duration - Schedule duration <= Tolerance)
 
 ![Possible Scenarios](image-20240430113738251.png)
 
@@ -82,11 +82,11 @@ I set up a point grading system to measure the time as below.
 
 After calculating the points according to these standards, we can have a total point for each milestone. 
 
-| Points   | RAG  |
-| -------- | ---- |
-| [0, 2]   | G    |
-| [-2, 0)  | A    |
-| [-4, -2) | R    |
+| Total Points | RAG  |
+| ------------ | ---- |
+| [0, 2]       | G    |
+| [-2, 0)      | A    |
+| [-4, -2)     | R    |
 
 ## What's Budget AVC Check?
 
@@ -106,8 +106,6 @@ To simplify the analysis given the data at hand, I preprocess the data into cate
 - Budget Consumption Milestone
 - Cost Center (a.k.a., project number/name)
 - Amount
-
-If 
 
 ## Summary
 
