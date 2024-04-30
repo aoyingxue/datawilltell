@@ -42,13 +42,15 @@ Technically, a **Red** project means it's challenging and needs management atten
 - Project scope or client requests will result in a level of risks, significant extra work, or extra cost that the budget hardly covers. 
 - Resources lack, which impacts the schedule to deliver the quality promised. 
 
-An Amber
+An **Amber** project means 
 
 ## How to set up RAG Flags in project reporting dashboard?
 
 My client PMO currently lacks the project standards to identify each status. The data I have at hand is milestones of each project, the actual & predicted start date and finish date of each milestone, each milestone's budget and current actuals categorized into cost of goods, expenses, and labor costs. 
 
 So what I did first is to set up a series of KPIs to help me categorize projects into 3 colors. 
+
+![dashboard](image-20240430175200884.png)
 
 ### Money related variables
 
