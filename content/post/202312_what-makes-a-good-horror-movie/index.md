@@ -16,19 +16,15 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 ## Dashboard
 
-It's better to interact with it at Tableau Public ([Link](https://public.tableau.com/app/profile/yukiao/viz/WhatMakesAGoodHorrorMovies/Whatmakesagoodhorrormovie)). I'd be much appreciate it if you like it and add it as your favorite.
+🎉 Exciting News Alert! 🎉
 
-#### 1. A good horror is <u>short</u>.
+I'm absolutely thrilled to share a milestone that has filled me with immense gratitude and joy. My visualization **[What Makes a Good Horror Movie?](https://public.tableau.com/app/profile/yukiao/viz/WhatMakesAGoodHorrorMovies/Whatmakesagoodhorrormovie)** was recently featured in [The Tableau Public Viz Gallery](https://www.tableau.com/blog/tableau-public-viz-gallery-tableau-conference-2024) at Tableau Conference 2024! 🚀
 
-🩳 Horror is the shortest film out of 28 genres.  
+Being recognized together with so many talents on such a prestigious platform is truly a dream come true for me. It's a testament to the dedication and DataViz passion poured into my craft. I'm incredibly grateful for this opportunity to showcase my skills and creativity on a global stage.
 
-#### 2. A Better horror is colored. 
+I want to extend my heartfelt thanks to the Tableau community for the continuous support, inspiration, and encouragement. I'm beyond excited for what the future holds and can't wait to continue exploring new possibilities and pushing the boundaries of data visualization. Thank you, Tableau, for this incredible honor! 🙏
 
-🖍️ 1st horror movie released in 1912, since when b&w dominated. But the Peak of Horror only came after colored film was introduced.  
-
-#### 3. The Best Horror is <u>Quality over Quantity</u>.
-
-🌎 Places that released the most don’t have the best.
+**Check out [Tableau Public](https://public.tableau.com/app/profile/yukiao/viz/WhatMakesAGoodHorrorMovies/Whatmakesagoodhorrormovie) for my dashboard, and [Tableau Blog](https://www.tableau.com/blog/tableau-public-viz-gallery-tableau-conference-2024) for other amazing visualizations! If you are in San Diego for TC 2024, be sure to stop by the Data + Movies booth to see my viz!** 
 
 ![What Makes A Good Horror Movie](dashboard.png)
 
