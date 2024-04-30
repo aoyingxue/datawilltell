@@ -30,6 +30,44 @@ I'm personally a Spotify playlist addict. I love to curate song playlists for di
 
 With [Spotify Web API](https://developer.spotify.com/web-api/), you can find details of each song in the playlist including genre, mood, artist, date of release, and other musical attributes. If you want to avoid typing codes, there are several free online tools available, such as [Spotify Playlist Analyzer](https://www.chosic.com/spotify-playlist-analyzer/). By copying and pasting your playlist link in the search box and analyze, it would output all kinds of details and you could also export table as csv. 
 
+## Process
+
+### Write a simple Python script to process Spotify data through web api
+
+Thanks to [Spotipy](https://spotipy.readthedocs.io/en/2.19.0/), it's so much easier to access Spotify data through [Spotify's Web API](https://developer.spotify.com/documentation/web-api/).
+
+```python
+## import packages
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+import pandas as pd
+
+## 
+CLIENT_ID="INPUT YOUR API ID"
+CLIENT_SECRET="INPUT YOUR API SECRET"
+SPOTIPY_REDIRECT_URI="http://127.0.0.1/callback" # must match the redirect URI added to your app in your Spotify dashboard.
+
+client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
+sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+```
+
+*Note: It is important to note that Spotify has set the maximum offset to 1000. For example, if you use sp.search(), it returns a maximum of 50 results per query, which is why a nested for loop is utilized.*
+
+```python
+## use a playlist to set an example
+playlist_items = sp.playlist_tracks("https://open.spotify.com/playlist/34Vt61ufh30YPJX45e1Om0?si=7b9df5961f8e4308")
+playlist_items = pd.DataFrame(playlist_items['items'])
+playlist = pd.DataFrame()
+playlist['added_at'] = playlist_items['added_at']
+
+
+```
+
+
+
+1. 4*7 matrix of 28 radar maps showing each playlist's musical attributes, or one stacked radar map 
+2. A Spotify now playing widget, click the episode and play the playlist
+
 ## Inspirations
 
 Thanks to [Emanuela Blaiotta](https://public.tableau.com/app/profile/emanuela8569)'s [A week in music - Spotify API](https://public.tableau.com/app/profile/emanuela8569/viz/Aweekinmusic-SpotifyAPI/Spotify), I get to know that it's even possible to embed Spotify in Tableau dashboard. 
