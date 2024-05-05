@@ -23,7 +23,7 @@ In this blog, we'll explore how RAG Flags provide visual cues within Gantt chart
 
 ## RAG in project management
 
-As [Elizabeth Harrin](https://rebelsguidetopm.com/understanding-rag-in-project-management/) clearly stated in *rgpm blog*, RAG stands for Red, Amber, Green. Each of the colors represent a type or series of management actions required. It's a shorthand summary for showing projects going well or those in trouble. 
+As [Elizabeth Harrin](https://rebelsguidetopm.com/understanding-rag-in-project-management/) stated in *rgpm blog*, RAG stands for Red, Amber, Green. Each of the colors represent a type or series of management actions required. It's a shorthand summary for showing projects going well or those in trouble. 
 
 | Flag | Color | Project                                                      |
 | ---- | ----- | ------------------------------------------------------------ |
