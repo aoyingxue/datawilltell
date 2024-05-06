@@ -1,5 +1,5 @@
 ---
-title: Enhancing Project Management with RAG Flag (BRAG Status) and Budget Availability Control (AVC) Check in Gantt
+title: Project Management with RAG Flag and Budget Availability Control (AVC Check) in Gantt
 description: 
 slug: rag-flags-brag-status-and-budget-availability-control-avc-check-in-project-management
 date: 2024-05-06
