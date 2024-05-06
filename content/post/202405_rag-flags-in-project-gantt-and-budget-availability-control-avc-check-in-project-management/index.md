@@ -2,7 +2,7 @@
 title: Enhancing Project Management with RAG Flag (BRAG Status) and Budget Availability Control (AVC) Check in Gantt
 description: 
 slug: rag-flags-brag-status-and-budget-availability-control-avc-check-in-project-management
-date: 2024-04-29
+date: 2024-05-06
 image: 
 categories:
     - How To
@@ -10,6 +10,9 @@ tags:
     - Tableau
     - Data Visualization
     - Project Management
+    - RAG Flag
+    - AVC Check
+    - Budget Management
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
@@ -23,7 +26,7 @@ In this blog, we'll explore how RAG Flags provide visual cues within Gantt chart
 
 ## RAG in project management
 
-As [Elizabeth Harrin](https://rebelsguidetopm.com/understanding-rag-in-project-management/) stated in *rgpm blog*, RAG stands for Red, Amber, Green. Each of the colors represent a type or series of management actions required. It's a shorthand summary for showing projects going well or those in trouble. 
+As [Elizabeth Harrin](https://rebelsguidetopm.com/understanding-rag-in-project-management/) clearly stated in *rgpm blog*, RAG stands for Red, Amber, Green. Each of the colors represent a type or series of management actions required. It's a shorthand summary for showing projects going well or those in trouble. 
 
 | Flag | Color | Project                                                      |
 | ---- | ----- | ------------------------------------------------------------ |
@@ -42,7 +45,9 @@ Technically, a **Red** project means it's challenging and needs management atten
 - Project scope or client requests will result in a level of risks, significant extra work, or extra cost that the budget hardly covers. 
 - Resources lack, which impacts the schedule to deliver the quality promised. 
 
-An **Amber** project means 
+An **Amber** project means it may need management's attention however it's controllable. It may miss some targets, but overall it can be completed within tolerances. Project managers need to keep a close eye on it to make sure project status back on track soon.
+
+A **Green** project means the project is progressing as planned. Everything is on track and no technical issues. 
 
 ## How to set up RAG Flags in project reporting dashboard?
 
@@ -96,6 +101,8 @@ Before understanding budget AVC, we have to talk about budget consumption. Accor
 
 In certain cases, including my current project, a commitment document is not available, so the actual document is directly consuming the budget. In both cases (with and without a reference to a predecessor commitment document) this is referred to as **actual updating**. Commitment and actual postings together form the **budget consumption**.
 
+### Data Structure
+
 To simplify the analysis given the data at hand, I preprocess the data into categories below:
 
 - Plan Category
@@ -109,9 +116,19 @@ To simplify the analysis given the data at hand, I preprocess the data into cate
 - Cost Center (a.k.a., project number/name)
 - Amount
 
+### Budget Overview
+
+- Consumable Expense Amount
+- Consumed Expense Amount
+- Available Expense Amount
+
+### Tolerance Limits and Budget Usage Rate
+
+We need to act long before even there's only a clue of exceeding budget. **Tolerance Limits** are set for defining what actions are to be taken when a budget usage rate is reached. A warning or error message can be triggered if the defined tolerance limit is exceeded. Because PMO doesn't set tolerance limits, it's a good idea to set up a series of tolerance parameters for them to adjust as they want. 
+
 ## Summary
 
-
+Project dashboard with RAG status or Budget AVC is just one of the many methods of preparing project management reports. The most important thing for project management is to have a set of standards and processes to be able to alarm and react when crisis arrives. 
 
 ## Reference
 
