@@ -132,5 +132,6 @@ Project dashboard with RAG status or Budget AVC is just one of the many methods 
 
 ## Reference
 
-- SAP, [Understanding Availability Control](https://learning.sap.com/learning-journeys/implementing-budget-management-process-in-sap-s-4hana-cloud-public-edition-for-public-sector/understanding-availability-control_a6a28596-d0ed-40cd-801c-d034b8a90b6b) 
-- Elizabeth Harrin, [rgpm](https://rebelsguidetopm.com/understanding-rag-in-project-management/) 
+- *SAP*, [Understanding Availability Control](https://learning.sap.com/learning-journeys/implementing-budget-management-process-in-sap-s-4hana-cloud-public-edition-for-public-sector/understanding-availability-control_a6a28596-d0ed-40cd-801c-d034b8a90b6b) 
+- *Elizabeth Harrin*, [rgpm](https://rebelsguidetopm.com/understanding-rag-in-project-management/) 
+- *Weill Cornell Medicine*, [Budget Control](https://research.weill.cornell.edu/sites/default/files/3-_budget_control_9.16.pdf)
