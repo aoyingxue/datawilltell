@@ -3,7 +3,7 @@ title: Enhancing Project Management with RAG Flag (BRAG Status) and Budget Avail
 description: 
 slug: rag-flags-brag-status-and-budget-availability-control-avc-check-in-project-management
 date: 2024-05-06
-image: 
+image: image-20240430175200884.png
 categories:
     - How To
 tags:
