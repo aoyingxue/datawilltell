@@ -22,7 +22,7 @@ In the ever-evolving landscape of business, the significance of effective projec
 
 I recently received an analysis request from Project Management Office to monitor operational projects and extract insights that could inform decision-making and optimize project outcomes. I delved into project management methodologies and given the tasks and data at hand, tools like (B)RAG Status and Budget Availability Control (AVC) Checks give me a framework to start. 
 
-In this blog, we'll explore how RAG Flags provide visual cues within Gantt charts, allowing project teams to quickly assess the status of tasks and milestones. Additionally, we'll delve into the importance of AVC Checks in maintaining budgetary discipline, ensuring that financial resources are allocated optimally to support project objectives.
+In this blog, we'll explore how RAG Flags provide visual cues within Gantt charts, allowing project teams to quickly assess the status of tasks and milestones. Additionally, we'll delve into the importance of AVC checks in maintaining budgetary discipline, ensuring that financial resources are allocated optimally to support project objectives.
 
 ## RAG in project management
 
