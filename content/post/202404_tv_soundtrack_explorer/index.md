@@ -15,6 +15,7 @@ tags:
     - Map Layers
     - Spotify
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+draft: true
 ---
 
 ## Dashboards (Tableau Public link [here]())
@@ -108,7 +109,7 @@ def time_to_duration_in_ms(string):
 
 IMDb dataset is too large and overabundant for this project so I used Tableau Prep to do a bit of joining and filtering before importing data in Tableau. 
 
-![Tableau Prep](image-20240502175510947.png)
+![Tableau Prep](image-20240507220337174.png)
 
 Tableau Prep will automatically and forcibly sample and bring a subset of large dataset into the flow. It will make the data flow efficient, and when you run the flow and generate an output, Tableau Prep will supposedly process all the records in your data set. However, it may show results that's misleading to users when you try to do joins. For example, when I pull IMDb in the flow and join it with playlist info, the randomly sampled subset doesn't have the rows containing the tv shows I need so that the preview result will possibly show a blank table. 
 
