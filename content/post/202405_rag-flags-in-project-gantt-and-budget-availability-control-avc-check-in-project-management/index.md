@@ -1,6 +1,6 @@
 ---
 title: Project Management with RAG Flag and Budget Availability Control (AVC Check) in Gantt
-description: In this blog, we'll explore how RAG Flags provide visual cues within Gantt charts, allowing project teams to quickly assess the status of tasks and milestones. Additionally, we'll delve into the importance of AVC Checks in maintaining budgetary discipline, ensuring that financial resources are allocated optimally to support project objectives.
+description: Using RAG Flag and Budget AVC to identify projects that need attention. 
 slug: rag-flags-brag-status-and-budget-availability-control-avc-check-in-project-management
 date: 2024-05-06
 image: image-20240430175200884.png
