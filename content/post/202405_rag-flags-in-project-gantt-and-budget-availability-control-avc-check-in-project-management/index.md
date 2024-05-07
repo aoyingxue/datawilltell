@@ -1,5 +1,5 @@
 ---
-title: Project Management with RAG Flag and Budget Availability Control (AVC Check) in Gantt
+title: RAG Flag, Budget Availability Control (AVC Check) and Gantt in Project Management
 description: Using RAG Flag and Budget AVC to identify projects that need attention. 
 slug: rag-flags-brag-status-and-budget-availability-control-avc-check-in-project-management
 date: 2024-05-06
@@ -49,7 +49,38 @@ An **Amber** project means it may need management's attention however it's contr
 
 A **Green** project means the project is progressing as planned. Everything is on track and no technical issues. 
 
-## How to set up RAG Flags in project reporting dashboard?
+## What's Budget AVC Check
+
+Before understanding budget AVC, we have to talk about budget consumption. According to SAP Learning, in public sector organizations, no business activity which leads to a future payment can be posted/approved without an available budget. As soon as governments foresee future payments as a result of an operative commitment document, they need to reserve their budget. This reservation of the budget needs to be documented through a financial budget consumption document, which is controlled by **active availability checking**. And this mechanism is referred to in this document as **commitment updating**.
+
+In certain cases, including my current project, a commitment document is not available, so the actual document is directly consuming the budget. In both cases (with and without a reference to a predecessor commitment document) this is referred to as **actual updating**. Commitment and actual postings together form the **budget consumption**.
+
+### Data Structure
+
+To simplify the analysis given the data at hand, I preprocess the data into categories below:
+
+- Plan Category
+  - Budget
+  - Actual
+- Budget Consumption Type
+  - Expense
+  - Costs of goods
+  - Labor costs
+- Budget Consumption Milestone
+- Cost Center (a.k.a., project number/name)
+- Amount
+
+### Budget Overview
+
+- Consumable Expense Amount
+- Consumed Expense Amount
+- Available Expense Amount
+
+### Tolerance Limits and Budget Usage Rate
+
+We need to act long before even there's only a clue of exceeding budget. **Tolerance Limits** are set for defining what actions are to be taken when a budget usage rate is reached. A warning or error message can be triggered if the defined tolerance limit is exceeded. Because PMO doesn't set tolerance limits, it's a good idea to set up a series of tolerance parameters for them to adjust as they want. 
+
+## Case: RAG Flags and Budget Usage in project dashboard
 
 My client PMO currently lacks the project standards to identify each status. The data I have at hand is milestones of each project, the actual & predicted start date and finish date of each milestone, each milestone's budget and current actuals categorized into cost of goods, expenses, and labor costs. 
 
@@ -94,37 +125,6 @@ After calculating the points according to these standards, we can have a total p
 | [0, 2]       | G    |
 | [-2, 0)      | A    |
 | [-4, -2)     | R    |
-
-## What's Budget AVC Check?
-
-Before understanding budget AVC, we have to talk about budget consumption. According to SAP Learning, in public sector organizations, no business activity which leads to a future payment can be posted/approved without an available budget. As soon as governments foresee future payments as a result of an operative commitment document, they need to reserve their budget. This reservation of the budget needs to be documented through a financial budget consumption document, which is controlled by **active availability checking**. And this mechanism is referred to in this document as **commitment updating**.
-
-In certain cases, including my current project, a commitment document is not available, so the actual document is directly consuming the budget. In both cases (with and without a reference to a predecessor commitment document) this is referred to as **actual updating**. Commitment and actual postings together form the **budget consumption**.
-
-### Data Structure
-
-To simplify the analysis given the data at hand, I preprocess the data into categories below:
-
-- Plan Category
-  - Budget
-  - Actual
-- Budget Consumption Type
-  - Expense
-  - Costs of goods
-  - Labor costs
-- Budget Consumption Milestone
-- Cost Center (a.k.a., project number/name)
-- Amount
-
-### Budget Overview
-
-- Consumable Expense Amount
-- Consumed Expense Amount
-- Available Expense Amount
-
-### Tolerance Limits and Budget Usage Rate
-
-We need to act long before even there's only a clue of exceeding budget. **Tolerance Limits** are set for defining what actions are to be taken when a budget usage rate is reached. A warning or error message can be triggered if the defined tolerance limit is exceeded. Because PMO doesn't set tolerance limits, it's a good idea to set up a series of tolerance parameters for them to adjust as they want. 
 
 ## Summary
 
