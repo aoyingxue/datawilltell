@@ -38,3 +38,27 @@ url = "https://public.tableau.com/app/profile/yukiao/vizzes"
 
 [social.params]
 icon = "brand-tableau-software"
+
+[[social]]
+identifier = "instagram"
+name = "Instagram"
+url = "https://www.instagram.com/datawilltell/"
+
+[social.params]
+icon = "brand-instagram"
+
+[[social]]
+identifier = "threads"
+name = "Instagram"
+url = "https://www.threads.net/@datawilltell"
+
+[social.params]
+icon = "brand-threads"
+
+[[social]]
+identifier = "twitter"
+name = "X/Twitter"
+url = "https://twitter.com/datawilltell"
+
+[social.params]
+icon = "brand-twitter"
