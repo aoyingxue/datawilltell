@@ -1,5 +1,5 @@
 ---
-title: What Makes A Good Horror Movie
+title: What Makes A Good Horror Movie (Featured in Tableau Public Viz Gallery at Tableau Conference 2024)
 description: Halloween has just passed the corner, yet the allure of horror movies remains still. What are the defining points that make a good horror movie?
 slug: what-makes-a-good-horror-movie
 date: 2023-11-17
@@ -11,7 +11,7 @@ tags:
     - Data Visualization
     - DataPlusMovies 
     - IMDb
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+weight: 2       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
 ## Dashboard
