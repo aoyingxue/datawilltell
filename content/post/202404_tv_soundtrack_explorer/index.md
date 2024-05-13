@@ -3,7 +3,7 @@ title: Exploring Cinematic Playlists: Music Analysis of Songs Playing in TV Show
 description: Music is one of the best companions of motion pictures. Songs from movies or TV series can also serve as a key to unlocking the emotions and atmosphere of the scenes, influencing the overall narrative and viewer experience. 
 slug: spotify-playlist-music-analysis-songs-from-tv
 date: 2024-04-04
-image: cover.png
+image: 
 categories:
     - Personal Projects
 tags:
