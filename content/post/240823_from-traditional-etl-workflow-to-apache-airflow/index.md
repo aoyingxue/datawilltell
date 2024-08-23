@@ -1,19 +1,20 @@
 ---
-title: ETL and data model
+title: From Traditional ETL workflow to Apache Airflow
 description: 
-slug: etl-and-data-model-inspired-by-owid
-date: 2024-04-04
+slug: from-traditional-etl-workflow-to-apache-airflow
+date: 2024-08-23
 image: 
 categories:
-    - Personal Projects
+    - Tutorial Notes
 tags:
-    - Tableau
-    - Data Visualization
+    - ETL
+    - Data Engineering
+    - 
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 draft: true
 ---
 
-Our World in Data is a platform of publication to see the large global problems and the powerful changes that reshape our world. They present accessible and understandable data with standardized graphs for people of interest and researchers, etc. Their design principles and way of organizing data are valuable to learn from so I made a little note of how they do their daily data work. 
+In business operations, data usually come from multiple sources, sometimes static excel files, sometimes 
 
 ## ETL Model
 
@@ -81,3 +82,11 @@ It's important to recognize that an external source might remove the file at any
 The snapshot step typically consists of a DVC file and a script that downloads the upstream data and saves it to our snapshot catalog. Snapshot files are located in the [`snapshots/`](https://github.com/owid/etl/tree/master/snapshots) directory of the project.
 
 Note that we need a DVC file per upstream data file; hence, in some instances, if the source publishes a dataset using multiple files, we need multiple DVC files.
+
+## Reference 
+
+- [Apache Airflow for Beginners - Build Your First Data Pipeline](https://www.projectpro.io/article/apache-airflow-data-pipeline-example/610)
+
+- [Getting Started with Apache Airflow, datacamp](https://www.datacamp.com/tutorial/getting-started-with-apache-airflow)
+
+- [Building an ETL Pipeline with Airflow, datacamp](https://www.datacamp.com/tutorial/building-an-etl-pipeline-with-airflow)
