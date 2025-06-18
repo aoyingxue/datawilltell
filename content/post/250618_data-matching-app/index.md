@@ -14,7 +14,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 draft: false
 ---
 
-I often work with tabular data that needs to be “aligned” — matching messy entries like inconsistent customer names, city names, or codes against a standard reference. To save time and reduce manual Excel cleaning, I built a [**Streamlit web app**](https://data-matching.streamlit.app/) for me and my team. It matches raw data to reference mapping data file, supports manual input, and exports the cleaned results — all in-browser.
+I often work with tabular data that needs to be “aligned” — matching messy entries like inconsistent customer names, city names, or codes against a standard reference. To save time and reduce manual Excel cleaning, I built a [***<u>Streamlit web app</u>***](https://data-matching.streamlit.app/) for me and my team. It matches raw data to reference mapping data file, supports manual input, and exports the cleaned results — all in-browser.
 
 ## What This App Does
 
