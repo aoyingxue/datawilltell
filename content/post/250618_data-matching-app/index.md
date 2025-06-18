@@ -6,7 +6,7 @@ tags:
   - Streamlit
   - Data Cleaning
   - AI-assisted Coding
-image:image-20250618150146353.png
+image: image-20250618150146353.png
 summary: A walkthrough of building a data-matching Streamlit tool with the help of AI, and how a subtle bug reminded me that real understanding still matters.
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 draft: false
