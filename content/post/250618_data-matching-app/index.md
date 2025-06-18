@@ -6,6 +6,7 @@ tags:
   - Streamlit
   - Data Cleaning
   - AI-assisted Coding
+image:image-20250618150146353.png
 summary: A walkthrough of building a data-matching Streamlit tool with the help of AI, and how a subtle bug reminded me that real understanding still matters.
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 draft: false
@@ -13,7 +14,7 @@ draft: false
 
 I often work with tabular data that needs to be “aligned” — matching messy entries like inconsistent customer names, city names, or codes against a standard reference. To save time and reduce manual Excel cleaning, I built a [**Streamlit web app**](https://data-matching.streamlit.app/) for me and my team. It matches raw data to reference mapping data file, supports manual input, and exports the cleaned results — all in-browser.
 
-![image-20250618150146353](../../../images/image-20250618150146353.png)
+![image-20250618150146353](image-20250618150146353.png)
 
 ## What This App Does
 
