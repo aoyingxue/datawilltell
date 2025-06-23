@@ -3,7 +3,7 @@ title: "Building an Interactive Histogram Explorer with Streamlit"
 description: "Learn how I built a web-based histogram explorer using Streamlit, combining data visualization best practices with modern web development to create an intuitive tool for exploring data distributions."
 slug: "streamlit-histogram-explorer"
 date: 2025-04-25
-image: image-20250623114710331.png
+image: image-20250623114710331_cover.png
 categories:
   - Data Visualization
   - Web Development
@@ -31,7 +31,7 @@ That's why I built the <u>***[Histogram Explorer](https://histogram-explorer.str
 
 Beyond the practical need for better data exploration tools, this project served another important purpose: **me reconnecting with Streamlit**. During my graduate studies, I had used Streamlit to build an interactive data analysis web application for a competition. However, after entering the workforce, I hadn't revisited this technology stack. When I recently discovered an interesting screen time dataset shared by the data community, I saw the perfect opportunity to dust off my Streamlit skills. Instead of reaching for my go-to tool Tableau, I chose to challenge myself with Streamlit development, leveraging AI-assisted coding to accelerate the implementation process.
 
-![image-20250623114710331](image-20250623114710331.png)
+![image-20250623114710331](image-20250623114710331_full.png)
 
 ## Project Purpose and Goals
 
