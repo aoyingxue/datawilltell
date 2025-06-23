@@ -8,7 +8,7 @@ tags:
   - web-app
   - data-exploration
   - ai-assisted-coding
-image: image-20250618150146353.png
+image: image-20250618150146353_cover.jpg
 categories:
   - Data Visualization
   - Web Development
@@ -42,6 +42,8 @@ You can use it to:
 - `.csv`, `.xlsx`, `.json` for both raw data and mapping reference
 - Sheet selection for Excel
 - Transposition toggle for JSON (to handle nested formats)
+
+[!image](image-20250618150146353_cover)
 
 ## How It Works
 
