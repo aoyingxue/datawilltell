@@ -3,7 +3,7 @@ title: "Building an Interactive Histogram Explorer with Streamlit"
 description: "Learn how I built a web-based histogram explorer using Streamlit, combining data visualization best practices with modern web development to create an intuitive tool for exploring data distributions."
 slug: "streamlit-histogram-explorer"
 date: 2025-04-25
-image: 
+image: image-20250623114710331.png
 categories:
   - Data Visualization
   - Web Development
@@ -27,9 +27,11 @@ draft: false
 
 Data visualization is fundamental to understanding your datasets, and histograms are among the most powerful tools for exploring data distributions. However, creating multiple histograms with different parameters and filters often requires writing repetitive code or juggling between different tools.
 
-That's why I built the **Histogram Explorer** – a streamlined web application that lets you explore data distributions interactively through your browser. Whether you're analyzing sample data or your own datasets, this tool makes histogram exploration intuitive and efficient. You can check out the complete project and code on *<u>**[GitHub](https://github.com/aoyingxue/histogram-explorer)**</u>*.
+That's why I built the <u>***[Histogram Explorer](https://histogram-explorer.streamlit.app/)***</u> – a streamlined web application that lets you explore data distributions interactively through your browser. Whether you're analyzing sample data or your own datasets, this tool makes histogram exploration intuitive and efficient. You can check out the complete project and code on *<u>**[GitHub](https://github.com/aoyingxue/histogram-explorer)**</u>*.
 
 Beyond the practical need for better data exploration tools, this project served another important purpose: **me reconnecting with Streamlit**. During my graduate studies, I had used Streamlit to build an interactive data analysis web application for a competition. However, after entering the workforce, I hadn't revisited this technology stack. When I recently discovered an interesting screen time dataset shared by the data community, I saw the perfect opportunity to dust off my Streamlit skills. Instead of reaching for my go-to tool Tableau, I chose to challenge myself with Streamlit development, leveraging AI-assisted coding to accelerate the implementation process.
+
+![image-20250623114710331](image-20250623114710331.png)
 
 ## Project Purpose and Goals
 
@@ -230,3 +232,4 @@ For me personally, this project was a successful return to Streamlit development
 ------
 
 *Ready to explore your data distributions? Check out the [Histogram Explorer on GitHub](https://github.com/aoyingxue/histogram-explorer) and start discovering patterns in your datasets!*
+

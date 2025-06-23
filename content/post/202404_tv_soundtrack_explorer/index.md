@@ -5,15 +5,14 @@ slug: spotify-music-analysis-tv-soundtrack-playlist-songs-playing-in-tv-series
 date: 2024-04-04
 image: 
 categories:
-    - Personal Projects
+  - Data Visualization
+  - Tableau
 tags:
-    - Tableau
-    - Data Visualization
-    - Data Processing
-    - Radar Map
-    - Sunburnt Chart
-    - Map Layers
-    - Spotify
+  - data-processing
+  - radar-map
+  - sunburnt-chart
+  - map-layers
+  - spotify
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 draft: true
 ---

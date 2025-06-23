@@ -3,17 +3,21 @@ title: "Built by AI, Fixed by Me: Debugging a Data Matching App"
 slug: built-by-ai-fixed-by-me-debugging-a-data-matching-app
 date: 2025-06-18
 tags:
-  - Streamlit
-  - Data Cleaning
-  - AI-assisted Coding
+  - streamlit
+  - data-cleaning
+  - web-app
+  - data-exploration
+  - ai-assisted-coding
 image: image-20250618150146353.png
 categories:
-    - Personal Projects
+  - Data Visualization
+  - Web Development
+  - Python
+  - Personal Project
 summary: A walkthrough of building a data-matching Streamlit tool with the help of AI, and how a subtle bug reminded me that real understanding still matters.
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 draft: false
 ---
-
 I often work with tabular data that needs to be “aligned” — matching messy entries like inconsistent customer names, city names, or codes against a standard reference. To save time and reduce manual Excel cleaning, I built a [***<u>Streamlit web app</u>***](https://data-matching.streamlit.app/) for me and my team. It matches raw data to reference mapping data file, supports manual input, and exports the cleaned results — all in-browser.
 
 ## What This App Does

@@ -5,14 +5,13 @@ slug: rag-flags-brag-status-and-budget-availability-control-avc-check-in-project
 date: 2024-05-06
 image: image-20240430175200884.png
 categories:
-    - How To
+  - Data Visualization
+  - Project Management
+  - Tableau
 tags:
-    - Tableau
-    - Data Visualization
-    - Project Management
-    - RAG Flag
-    - AVC Check
-    - Budget Management
+  - rag-flag
+  - avc-check
+  - budget-management
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 

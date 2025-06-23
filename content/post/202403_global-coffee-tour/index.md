@@ -5,11 +5,13 @@ slug: global-coffee-tour
 date: 2024-04-04
 image: cover.png
 categories:
-    - Personal Projects
+  - Data Visualization
+  - Web Development
+  - Python
+  - Personal Project
 tags:
-    - Tableau
-    - Data Visualization
-    - Data Collection
+  - Tableau
+  - data-collection
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 ## Dashboard

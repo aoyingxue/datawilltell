@@ -5,12 +5,13 @@ slug: what-makes-a-good-horror-movie
 date: 2023-11-17
 image: cover.png
 categories:
-    - Personal Projects
+  - Data Visualization
+  - Web Development
+  - Python
+  - Personal Project
 tags:
-    - Tableau
-    - Data Visualization
-    - DataPlusMovies 
-    - IMDb
+  - DataPlusMovies 
+  - IMDb
 weight: 2       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
