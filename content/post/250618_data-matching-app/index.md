@@ -43,7 +43,7 @@ You can use it to:
 - Sheet selection for Excel
 - Transposition toggle for JSON (to handle nested formats)
 
-[!image](image-20250618150146353_cover)
+![image](image-20250618150146353_full.png)
 
 ## How It Works
 
