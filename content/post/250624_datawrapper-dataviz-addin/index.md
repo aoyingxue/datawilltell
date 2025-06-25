@@ -19,6 +19,5 @@ draft: false
 
 Creating data visualizations that work consistently across different platforms can be challenging. Today, I'll walk you through a practical example of using Datawrapper to create a chart that you can embed in your Jekyll blog and use in PowerPoint presentations for management reports.
 
-{{< raw >}}
-    <iframe title="Tipping in Europe and America" aria-label="Stacked Bars" id="datawrapper-chart-BgTZy" src="https://datawrapper.dwcdn.net/BgTZy/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="678" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
-​    {{< /raw >}}
+{{< datawrapper id="BgTZy" title="Tipping in Europe and America" height="678" >}}
+
