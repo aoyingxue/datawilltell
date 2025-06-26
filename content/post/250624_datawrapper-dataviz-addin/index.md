@@ -14,7 +14,7 @@ categories:
 image: ""
 summary: "Learn how to embed interactive data visualizations with Datawrapper that work seamlessly in both Hugo blogs and PowerPoint presentations with a step-by-step example."
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
-draft: false
+draft: true
 ---
 
 As a data analyst, I write blogs to record tips or 
